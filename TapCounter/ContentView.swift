@@ -24,7 +24,7 @@ struct ContentView: View {
                     
                 }
                 HStack{
-                    Text("\(count)").padding().foregroundColor(Color.black).font(.system(size:80))
+                    Text("\(count)").padding().foregroundColor(Color.white).font(.system(size:80))
                         .frame(width: 200, height: 200, alignment: .center).border(Color.white)
                 }
                 HStack{
@@ -45,5 +45,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }
